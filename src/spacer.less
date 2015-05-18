@@ -1,0 +1,35 @@
+// usage: .u-{{type}}-{{direction}}{{size}}
+
+.generate(n, 0);
+.generate(xxs, 6px);
+.generate(xs, 9px);
+.generate(s, 12px);
+.generate(m, 20px);
+.generate(l, 27px);
+.generate(xl, 33px);
+
+.generate-padding(@name, @size) {
+	.u-padding-A@{name} { padding: @size; }
+	.u-padding-T@{name} { padding-top: @size; }
+	.u-padding-R@{name} { padding-right: @size; }
+	.u-padding-B@{name} { padding-bottom: @size; }
+	.u-padding-L@{name} { padding-left: @size; }
+	.u-padding-H@{name} { padding-left: @size; padding-right: @size; }
+	.u-padding-V@{name} { padding-top: @size; padding-bottom: @size; }
+}
+
+.generate-margin(@name, @size) {
+	.u-margin-A@{name} { margin: @size; }
+	.u-margin-T@{name} { margin-top: @size; }
+	.u-margin-R@{name} { margin-right: @size; }
+	.u-margin-B@{name} { margin-bottom: @size; }
+	.u-margin-L@{name} { margin-left: @size; }
+	.u-margin-H@{name} { margin-left: @size; margin-right: @size; }
+	.u-margin-V@{name} { margin-top: @size; margin-bottom: @size; }
+}
+
+.generate(@name, @size) {
+	.generate-padding(@name, @size);
+	.generate-margin(@name, @size);
+}
+

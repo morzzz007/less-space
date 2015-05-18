@@ -1,0 +1,16 @@
+{
+  "name": "less_space",
+  "version": "1.0.0",
+  "description": "Less Space Utility",
+  "main": "gulp less",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "morz@morz.hu (http://morz.hu/)",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.3",
+    "gulp-watch": "^4.2.4"
+  }
+}
